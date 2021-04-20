@@ -1,0 +1,82 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 6 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: test.ipynb
+--------------------------------------------------------------------------------
+test.ipynb:281:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+test.ipynb:282:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+test.ipynb:283:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+test.ipynb:284:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+test.ipynb:285:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+test.ipynb:286:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'test.ipynb'
+ outputting to 'test2.ipynb'
+--------------------------------------------------------------------------------
+
+16:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+18:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+25:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+29:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+61:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+85:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+92:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+121:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+122:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+128:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+168:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+201:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+254:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+255:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+278:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+281:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+281:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+281:57: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+282:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+282:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+282:53: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+283:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+283:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+283:54: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+284:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+284:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+284:53: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+285:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+285:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+285:53: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+286:9: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+286:9: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+286:52: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+297:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+298:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+336:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+338:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+358:13: INFO: Added keywords to args of function 'tf.transpose'
+359:13: INFO: Added keywords to args of function 'tf.transpose'
+362:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+362:26: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+366:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+368:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+394:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+422:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+426:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+429:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+473:38: INFO: Added keywords to args of function 'tf.argmax'
+473:53: INFO: Added keywords to args of function 'tf.argmax'
+476:19: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
